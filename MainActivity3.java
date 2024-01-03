@@ -1,4 +1,4 @@
-package personalitydisorder.scale;
+package assessment.scale;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -85,14 +85,14 @@ public class MainActivity3 extends AppCompatActivity {
     static int LISTSIZE = 20;
     String[] questions;
 
-    public MainActivity3(){
+    public MainActivity3() {
         questions = new String[LISTSIZE];
     }
 
-    public void setASPD(){
+    public void setASPD() {
         String[] ASPD = {"I often deceive or manipulate others for personal gain",
                 "I've consistently shown a disregard for the rights of others since adolescence",
-                "I engage in criminal behaviors?", "I have a history of substance abuse",
+                "I engage in criminal behaviors", "I have a history of substance abuse",
                 "I have a history of impulsivity", "I fail to plan ahead responsibly",
                 "I'm consistently irritable and aggressive, with a propensity for physical fights",
                 "I have a pattern of irresponsibility in work, financial, or other life areas",
@@ -106,12 +106,12 @@ public class MainActivity3 extends AppCompatActivity {
                 "I blame others for my mistakes and misdeeds", "I think it's ok to cheat on your significant other",
                 "I have a history of childhood conduct problems",
                 "I think people who show emotions are weak", "I enjoy hurting animals"};
-        for (int i = 0; i < LISTSIZE; i++){
+        for (int i = 0; i < LISTSIZE; i++) {
             questions[i] = ASPD[i];
         }
     }
 
-    public void setNPD(){
+    public void setNPD() {
         String[] NPD = {"Do I have an excessive sense of my own importance?",
                 "Am I preoccupied with fantasies of unlimited success, power, brilliance, beauty, or ideal love?",
                 "Do I believe that I am special and unique and can only be understood by, or should associate with, other special or high-status people?",
@@ -132,12 +132,12 @@ public class MainActivity3 extends AppCompatActivity {
                 "Do I have a tendency to take advantage of others to achieve my own goals?",
                 "Do I find it challenging to acknowledge the achievements or qualities of others, especially if they overshadow mine?",
                 "Do I believe that others envy me and feel that I am deserving of special treatment?"};
-        for (int i = 0; i < LISTSIZE; i++){
+        for (int i = 0; i < LISTSIZE; i++) {
             questions[i] = NPD[i];
         }
     }
 
-    public void setBPD(){
+    public void setBPD() {
         String[] BPD = {
                 "Do I have intense and unstable relationships characterized by extremes of idealization and devaluation?",
                 "Am I frequently afraid of being abandoned, even if there is no evidence for it?",
@@ -159,12 +159,12 @@ public class MainActivity3 extends AppCompatActivity {
                 "Am I frequently preoccupied with fantasies of unlimited success, beauty, or ideal love?",
                 "Do I feel emotionally numb or disconnected from my own thoughts, feelings, and actions?",
                 "Am I prone to intense and inappropriate anger, often followed by shame and guilt?"};
-        for (int i = 0; i < LISTSIZE; i++){
+        for (int i = 0; i < LISTSIZE; i++) {
             questions[i] = BPD[i];
         }
     }
 
-    public void setHPD(){
+    public void setHPD() {
         String[] HPD = {"Do I often seek attention and feel uncomfortable when not the center of attention?",
                 "Do I often exaggerate my emotions to draw attention to myself?",
                 "Do I often express my emotions in a theatrical, exaggerated manner?",
@@ -185,15 +185,16 @@ public class MainActivity3 extends AppCompatActivity {
                 "Do I often perceive relationships as more intimate than they actually are?",
                 "Am I uncomfortable in situations where I am not the center of attention?",
                 "Do I have a tendency to be easily influenced by others or by the latest trends and fads?"};
-        for (int i = 0; i < LISTSIZE; i++){
+        for (int i = 0; i < LISTSIZE; i++) {
             questions[i] = HPD[i];
         }
     }
 
-    public String[] getQuestions(){
+    public String[] getQuestions() {
         String[] temp = new String[LISTSIZE];
-        for (int i = 0; i < LISTSIZE; i++){
-            questions[i] = temp[i];
-        } return temp;
+        for (int i = 0; i < LISTSIZE; i++) {
+            temp[i] = questions[i];
+        }
+        return temp;
     }
 }
