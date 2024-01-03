@@ -4,16 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/background_pic"
-    android:backgroundTint="#99FFFFFF"
-    android:backgroundTintMode="src_over">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/introduction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cluster_b_personality_ndisorder_scale"
+        android:text="CLUSTER-B PERSONALITY DISORDER SCALE"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -28,7 +25,7 @@
         android:id="@+id/author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/by_professor_mystic"
+        android:text="By: ProfessorMystic"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="#FF0000"
@@ -44,7 +41,7 @@
         android:id="@+id/startbutton"
         android:layout_width="219dp"
         android:layout_height="55dp"
-        android:text="@string/start"
+        android:text="START"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,7 +55,7 @@
         android:id="@+id/quitbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quit"
+        android:text="QUIT"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,5 +64,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startbutton"
         app:layout_constraintVertical_bias="0.163" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
