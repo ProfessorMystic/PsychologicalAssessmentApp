@@ -1,7 +1,6 @@
-package personalitydisorder.scale;
+package assessment.scale;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +18,7 @@ public class MainActivity5 extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start the MainActivity when the button is clicked
+                // Go back to the very first layout (MainActivity)
                 Intent intent = new Intent(MainActivity5.this, MainActivity.class);
                 startActivity(intent);
             }
