@@ -4,77 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3"
-    android:background="@drawable/picasso_doramaar"
-    android:backgroundTint="#99FFFFFF"
-    android:backgroundTintMode="src_over">
+    tools:context=".MainActivity3">
 
     <TextView
-        android:layout_width="345dp"
+        android:layout_width="368dp"
         android:layout_height="47dp"
+        android:layout_marginBottom="64dp"
         android:background="@color/design_default_color_primary"
-        android:text="@string/select_questionnaire"
+        android:text="SELECT QUESTIONNAIRE"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/ASPD"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.417" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/ASPD"
         android:layout_width="270dp"
         android:layout_height="80dp"
-        android:text="@string/ASPD"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="64dp"
+        android:text="ANTI-SOCIAL PERSONALITY DISORDER"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/NPD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175"
-        android:textStyle="bold"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/NPD"
         android:layout_width="270dp"
         android:layout_height="80dp"
-        android:text="@string/NPD"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="64dp"
+        android:text="NARCISSISTIC PERSONALITY DISORDER"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BPD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ASPD"
-        app:layout_constraintVertical_bias="0.135"
-        android:textStyle="bold"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/BPD"
         android:layout_width="270dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="256dp"
-        android:text="@string/BPD"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="64dp"
+        android:text="BORDERLINE PERSONALITY DISORDER"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/HPD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NPD"
-        app:layout_constraintVertical_bias="1.0"
-        android:textStyle="bold"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/HPD"
         android:layout_width="270dp"
         android:layout_height="80dp"
-        android:text="@string/HPD"
+        android:layout_marginBottom="72dp"
+        android:text="HISTRIONIC PERSONALITY DISORDER"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BPD"
-        app:layout_constraintVertical_bias="0.323"
-        android:textStyle="bold"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
