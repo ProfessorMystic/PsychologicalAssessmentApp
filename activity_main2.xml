@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:background="@drawable/picasso_doramaar"
-    android:backgroundTint="#99FFFFFF"
-    android:backgroundTintMode="src_over">
+    tools:context=".MainActivity2">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +20,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="1220dp"
                 android:padding="16dp"
-                android:text="@string/DISCLAIMER"
+                android:text="DISCLAIMER: The creator of this app is not a registered psychologist
+in any way, shape, or form. The results you obtain from these questionnaires do not
+serve as diagnoses to personality disorders, rather they're intentions are to depict
+the likelihood one may need to seek help from professionals. \n\nAnti-social personality
+disorder (ASPD) is characterized by rash, impulsive, irresponsible and negligent
+behaviour. A person with ASPD can be manipulative, deceitful, reckless, and lack
+empathy. Psychopaths and sociopaths tend to fall into this category. \n\nNarcissistic
+personality disorder (NPD) is a mental health condition characterized by having
+excessive grandiosity and vanity of oneself. People with NPD seek excessive
+validation and admiration from their peers. Often mistaken for psychopaths due to
+their ego-centrism. People with NPD can be manipulative and often become extremely
+hostile when upset, due to their deep-seeded insecurities and low self-esteem.
+\n\nBorderline personality disorder (BPD) is characterized by having an intense fear of
+abandonment, and difficulty tolerating being alone. Severely impacting one's
+ability to manage their emotions, a person with BPD tends to be rash and impulsive.
+Usually, during times of great distress, a person with BPD may partake in reckless
+and dangerous behaviors like binge-eating, reckless driving, casual sex, and
+substance abuse.\n\nHistrionic personality disorder (HPD) or commonly known as a
+dramatic personality disorder, is a psychiatric disorder distinguished by a
+pattern of exaggerated emotionality and attention-seeking behaviors.
+Ones with HPD are typically flirtatious, seductive, charming, manipulative,
+impulsive, and lively."
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -39,7 +57,7 @@
                     android:layout_height="55dp"
                     android:layout_marginEnd="80dp"
                     android:layout_weight="1"
-                    android:text="@string/back"
+                    android:text="BACK"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="ButtonStyle" />
@@ -49,7 +67,7 @@
                     android:layout_width="100dp"
                     android:layout_height="55dp"
                     android:layout_weight="1"
-                    android:text="@string/NextButton"
+                    android:text="NEXT"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="ButtonStyle" />
