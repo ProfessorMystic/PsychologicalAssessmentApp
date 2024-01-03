@@ -6,32 +6,43 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
 
-        Button backButton = findViewById(R.id.backButton);
-        Button nextButton = findViewById(R.id.nextButton);
+        // Set up button click listeners
+        setupButtonClickListeners();
+    }
 
-        backButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Set up button click listeners
+        setupButtonClickListeners();
+    }
+
+    private void setupButtonClickListeners() {
+        Button startButton = findViewById(R.id.startbutton);
+        Button quitButton = findViewById(R.id.quitbutton);
+
+        startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Go back to main menu and clear the back stack
-                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                // Navigate to next page
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivityForResult(intent, 1); // 1 is the requestCode
             }
         });
 
-        nextButton.setOnClickListener(new View.OnClickListener() {
+        quitButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // Handle the click event for the NEXT button
-                Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                // Close the app
+                finish();
             }
         });
     }
