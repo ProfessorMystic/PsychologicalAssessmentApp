@@ -81,9 +81,8 @@ public class MainActivity4 extends AppCompatActivity {
                         diag = "Mild: practice self-awareness";
                     } else {
                         diag = "Normal: nothing to worry about";
-                    }
-
-                    diagnosis.setText(diag);
+                    } diagnosis.setText(diag);
+                    
                     button6.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
