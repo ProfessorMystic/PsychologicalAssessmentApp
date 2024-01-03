@@ -1,10 +1,9 @@
-package personalitydisorder.scale;
+package assessment.scale;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -19,9 +18,11 @@ public class MainActivity2 extends AppCompatActivity {
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // Handle the click event for the BACK button
-                setContentView(R.layout.activity_main);
+            public void onClick(View v) {
+                // Go back to main menu and clear the back stack
+                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
         });
 
@@ -29,8 +30,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Handle the click event for the NEXT button
-                // Assuming you want to go to MainActivity when "NextButton" is clicked
-                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+                Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
                 startActivity(intent);
             }
         });
